@@ -1,4 +1,4 @@
-FROM b09780978/baseimage:18.04
+FROM b09780978/baseimage:16.04
 MAINTAINER faker <b09780978@gmail.com>
 
 WORKDIR /root

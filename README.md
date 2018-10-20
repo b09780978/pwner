@@ -1,3 +1,3 @@
 # pwner
 My Dockerfile for pwn.
-Ubuntu version: 18.04
+Ubuntu version: 16.04
