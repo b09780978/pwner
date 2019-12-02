@@ -4,14 +4,14 @@ MAINTAINER faker <b09780978@gmail.com>
 WORKDIR /root
 
 # Update and upgrade system.
-RUN apt-get update \
-&&  apt-get dist-upgrade -y
+RUN apt update \
+&&  apt upgrade -y
 
 # Add package for gdb to debug on dirrderent arch .
 RUN apt-get install -y binutils gcc-multilib \
 && apt-get install -y gdb-multiarch \
 && apt-get install -y ltrace strace \
-&& apt-get install -y make nasm nmap
+&& apt-get install -y make nasm
 
 # Install gdb-peda and Pwngdb and qira.
 RUN git clone https://github.com/longld/peda.git ~/peda \
